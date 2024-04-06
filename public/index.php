@@ -2,4 +2,4 @@
 
 include '..' . DIRECTORY_SEPARATOR . 'bootstrap.php';
 
-\Funbox\Framework\Web\WebApplication::create();
+\Bolero\Framework\Web\WebApplication::create();

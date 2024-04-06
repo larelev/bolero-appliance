@@ -1,4 +1,4 @@
-vendor/
+/vendor/
+/var/*
 .idea
 php_errors.log
-var/*

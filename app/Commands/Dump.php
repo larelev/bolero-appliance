@@ -2,10 +2,10 @@
 
 namespace App\Commands;
 
-use Funbox\Framework\Caching\Cache;
-use Funbox\Framework\Console\Commands\Attributes\Command;
-use Funbox\Framework\Console\Commands\CommandInterface;
-use Funbox\Framework\Routing\RoutesAggregator;
+use Bolero\Framework\Caching\Cache;
+use Bolero\Framework\Console\Commands\Attributes\Command;
+use Bolero\Framework\Console\Commands\CommandInterface;
+use Bolero\Framework\Routing\RoutesAggregator;
 
 #[Command(name: "dump")]
 #[Command(desc: "Converts a JSON dump to a PHP returned array.")]

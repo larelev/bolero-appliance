@@ -3,8 +3,8 @@
 namespace App\Repositories;
 
 use App\Entities\Post;
-use Funbox\Framework\Dbal\DataMapper;
-use Funbox\Framework\Dbal\Entity;
+use Bolero\Framework\Dbal\DataMapper;
+use Bolero\Framework\Dbal\Entity;
 
 class PostMapper extends DataMapper
 {

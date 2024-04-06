@@ -2,7 +2,7 @@
 
 namespace App\Entities;
 
-use Funbox\Framework\Dbal\Entity;
+use Bolero\Framework\Dbal\Entity;
 
 class Post extends Entity
 {

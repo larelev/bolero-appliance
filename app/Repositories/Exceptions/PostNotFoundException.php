@@ -2,7 +2,7 @@
 
 namespace App\Repositories\Exceptions;
 
-use Funbox\Framework\Dbal\Exceptions\DataNotFoundException;
+use Bolero\Framework\Dbal\Exceptions\DataNotFoundException;
 
 class PostNotFoundException extends DataNotFoundException
 {

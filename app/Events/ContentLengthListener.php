@@ -1,9 +1,9 @@
 <?php
 
-namespace App\events;
+namespace App\Events;
 
-use Funbox\Framework\Http\Event\ResponseEvent;
-use Funbox\Framework\Http\Event\ResponseEventListenerInterface;
+use Bolero\Framework\Http\Event\ResponseEvent;
+use Bolero\Framework\Http\Event\ResponseEventListenerInterface;
 
 class ContentLengthListener implements ResponseEventListenerInterface
 {

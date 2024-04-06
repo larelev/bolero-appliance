@@ -7,9 +7,9 @@ use App\Repositories\Exceptions\PostNotFoundException;
 use App\Repositories\PostMapper;
 use App\Repositories\PostRepository;
 use Doctrine\DBAL\Exception;
-use Funbox\Framework\Http\RedirectResponse;
-use Funbox\Framework\Http\Response;
-use Funbox\Framework\MVC\AbstractController;
+use Bolero\Framework\Http\RedirectResponse;
+use Bolero\Framework\Http\Response;
+use Bolero\Framework\MVC\AbstractController;
 
 class PostController extends AbstractController
 {

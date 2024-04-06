@@ -2,6 +2,6 @@
 
 return [
     APP_VIEWS_PATH,
-    ...\Funbox\Plugins\Authentication\Authentication::viewsPaths(),
-    ...\Funbox\Plugins\Dashboard\Dashboard::viewsPaths(),
+    ...\Bolero\Plugins\Authentication\Authentication::viewsPaths(),
+    ...\Bolero\Plugins\Dashboard\Dashboard::viewsPaths(),
 ];

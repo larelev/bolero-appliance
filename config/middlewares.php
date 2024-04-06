@@ -1,10 +1,10 @@
 <?php
 
 return [
-    \Funbox\Framework\Middleware\ExtractRouteInfo::class,
-    \Funbox\Framework\Middleware\SessionManager::class,
-    \Funbox\Plugins\FlashMessage\Middlewares\FlashMessenger::class,
-    \Funbox\Plugins\Authentication\Middlewares\VerifyCsrfToken::class,
-    \Funbox\Framework\Middleware\RouterDispatcher::class,
-    \Funbox\Framework\Middleware\History::class,
+    \Bolero\Framework\Middleware\ExtractRouteInfo::class,
+    \Bolero\Framework\Middleware\SessionManager::class,
+    \Bolero\Plugins\FlashMessage\Middlewares\FlashMessenger::class,
+    \Bolero\Plugins\Authentication\Middlewares\VerifyCsrfToken::class,
+    \Bolero\Framework\Middleware\RouterDispatcher::class,
+    \Bolero\Framework\Middleware\History::class,
 ];

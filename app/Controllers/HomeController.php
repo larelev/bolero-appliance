@@ -3,8 +3,8 @@
 namespace App\Controllers;
 
 use App\Widgets\Dummy;
-use Funbox\Framework\Http\Response;
-use Funbox\Framework\MVC\AbstractController;
+use Bolero\Framework\Http\Response;
+use Bolero\Framework\MVC\AbstractController;
 
 class HomeController extends AbstractController
 {

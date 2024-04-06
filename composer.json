@@ -1,23 +1,58 @@
 {
-  "minimum-stability": "dev",
+  "name": "larelev/bolero-appliance",
+  "description": "Authentication plugin for Bolero framework",
+  "license": "GPL-3.0+",
+  "version": "0.1.0",
   "autoload": {
     "psr-4": {
       "App\\": "app/",
       "Tests\\": "tests/"
     }
   },
-  "require": {
-    "php": "^8.2",
-    "larelev/funbox": "@dev"
-  },
-  "repositories": [
+  "authors": [
     {
-      "type": "path",
-      "url": "framework"
+      "name": "David Blanchard",
+      "email": "dpjb@hotmail.fr",
+      "role": "Creator"
     }
   ],
+  "minimum-stability": "dev",
+  "repositories": [{
+    "type": "path",
+    "url": "../authentication",
+    "options": {
+      "symlink": true
+    }
+  },
+    {
+      "type": "path",
+      "url": "../dashboard",
+      "options": {
+        "symlink": true
+      }
+    },
+    {
+      "type": "path",
+      "url": "../framework",
+      "options": {
+        "symlink": true
+      }
+    },
+    {
+      "type": "path",
+      "url": "../flashmessage",
+      "options": {
+        "symlink": true
+      }
+    }
+  ],
+  "require": {
+    "php": "^8.2",
+    "larelev/bolero-authentication": "@dev",
+    "larelev/bolero-framework": "@dev",
+    "larelev/bolero-flashmessage": "@dev"
+  },
   "require-dev": {
-    "symfony/var-dumper": "^7.0",
-    "phpunit/phpunit": "11.1.x-dev"
+    "symfony/var-dumper": "^7.0"
   }
 }

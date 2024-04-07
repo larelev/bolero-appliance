@@ -168,7 +168,7 @@
             "dist": {
                 "type": "path",
                 "url": "../authentication",
-                "reference": "99a74934503cd56b434b9ef1ce62e338aac5221b"
+                "reference": "84097842173d82f8610f7eaec35b4dabf3c9b9fc"
             },
             "require": {
                 "larelev/bolero-dashboard": "@dev",
@@ -204,7 +204,7 @@
             "dist": {
                 "type": "path",
                 "url": "../dashboard",
-                "reference": "ce60b27f5e61f421c03cb0cff29212455e980469"
+                "reference": "506802244098901fa58ed3ad4e1dd18f33331728"
             },
             "require": {
                 "larelev/bolero-flashmessage": "@dev",
@@ -239,7 +239,7 @@
             "dist": {
                 "type": "path",
                 "url": "../flashmessage",
-                "reference": "2649ccdbc989bd9dc380b2ec13ea20651bb0f317"
+                "reference": "59840dc3cddacd40aaa619739012b394b05746c2"
             },
             "require": {
                 "larelev/bolero-framework": "@dev",
@@ -273,7 +273,7 @@
             "dist": {
                 "type": "path",
                 "url": "../framework",
-                "reference": "c7eab4510af51ce2f452b548d4417a4bbd907504"
+                "reference": "8129c50a430b1e2883a52ac484ef47ac8e6843d7"
             },
             "require": {
                 "doctrine/dbal": "^4.1.x-dev",

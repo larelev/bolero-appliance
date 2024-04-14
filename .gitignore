@@ -3,6 +3,7 @@
 /var/*
 /cache/*
 /logs/*
+/oublic/*
 /runtime/*
 php_errors.log
 ajil.js

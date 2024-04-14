@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1fc5e0fbb4d27e9c405a16f08f4e65f7",
+    "content-hash": "5ce9764f4b126d2fb14c5e78361e1cdd",
     "packages": [
         {
             "name": "doctrine/dbal",
@@ -353,7 +353,7 @@
             "dist": {
                 "type": "path",
                 "url": "../framework",
-                "reference": "d5adbb48595c47fbed954ad4049e3e46fd77155c"
+                "reference": "ead50b75d1cb4d69e6eeac35a28bde40de274661"
             },
             "require": {
                 "doctrine/dbal": "^4.1.x-dev",
@@ -1077,12 +1077,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "5191fbc1a3ff09c71d9d29bd72ddfb9ed47b1efb"
+                "reference": "34f1bec64cf29aed71d746ab002a4b186debf907"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/5191fbc1a3ff09c71d9d29bd72ddfb9ed47b1efb",
-                "reference": "5191fbc1a3ff09c71d9d29bd72ddfb9ed47b1efb",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/34f1bec64cf29aed71d746ab002a4b186debf907",
+                "reference": "34f1bec64cf29aed71d746ab002a4b186debf907",
                 "shasum": ""
             },
             "require": {
@@ -1149,7 +1149,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-04-13T07:39:01+00:00"
+            "time": "2024-04-13T17:17:21+00:00"
         }
     ],
     "packages-dev": [
@@ -1249,8 +1249,9 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "^8.2"
+        "php": "^8.2",
+        "ext-readline": "*"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }

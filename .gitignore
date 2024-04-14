@@ -1,4 +1,8 @@
+.idea
 /vendor/
 /var/*
-.idea
+/cache/*
+/logs/*
+/runtime/*
 php_errors.log
+ajil.js

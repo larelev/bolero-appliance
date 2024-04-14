@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d066c04b32be74015f05a5348972c452",
+    "content-hash": "1fc5e0fbb4d27e9c405a16f08f4e65f7",
     "packages": [
         {
             "name": "doctrine/dbal",
@@ -163,12 +163,48 @@
             "time": "2024-01-30T19:34:25+00:00"
         },
         {
+            "name": "ephect-io/javascripts",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ephect-io/javascripts.git",
+                "reference": "0539671b5a4bf5a2918002b081cd7318906f0a52"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ephect-io/javascripts/zipball/0539671b5a4bf5a2918002b081cd7318906f0a52",
+                "reference": "0539671b5a4bf5a2918002b081cd7318906f0a52",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "David Blanchard",
+                    "email": "dpjb@hotmail.fr",
+                    "homepage": "https://code-phoenix.org",
+                    "role": "Creator"
+                }
+            ],
+            "description": "A client side javascript library to interoperate with ephect PHP library",
+            "homepage": "https://ephect.io",
+            "support": {
+                "issues": "https://github.com/ephect-io/javascripts/issues",
+                "source": "https://github.com/ephect-io/javascripts/tree/main"
+            },
+            "time": "2022-06-12T09:24:23+00:00"
+        },
+        {
             "name": "larelev/bolero-authentication",
             "version": "0.1.0",
             "dist": {
                 "type": "path",
                 "url": "../authentication",
-                "reference": "84097842173d82f8610f7eaec35b4dabf3c9b9fc"
+                "reference": "4fc69b4fd98b2fc5f22b454c5c9b010241ade758"
             },
             "require": {
                 "larelev/bolero-dashboard": "@dev",
@@ -204,7 +240,7 @@
             "dist": {
                 "type": "path",
                 "url": "../dashboard",
-                "reference": "506802244098901fa58ed3ad4e1dd18f33331728"
+                "reference": "87ac277af72d0972586f725109d976a5f233ab21"
             },
             "require": {
                 "larelev/bolero-flashmessage": "@dev",
@@ -239,7 +275,7 @@
             "dist": {
                 "type": "path",
                 "url": "../flashmessage",
-                "reference": "59840dc3cddacd40aaa619739012b394b05746c2"
+                "reference": "9cc6de4ee534db47da7a47c471ea8e5d40c0b95e"
             },
             "require": {
                 "larelev/bolero-framework": "@dev",
@@ -268,12 +304,56 @@
             }
         },
         {
+            "name": "larelev/bolero-forms",
+            "version": "0.1.0",
+            "dist": {
+                "type": "path",
+                "url": "../forms",
+                "reference": "5585adebe60b0830b9c0b29e9bd3624264d088b3"
+            },
+            "require": {
+                "doctrine/dbal": "^4.1.x-dev",
+                "ext-mbstring": "*",
+                "ext-pdo": "*",
+                "league/container": "^4.0.0",
+                "nikic/fast-route": "^1.3",
+                "psr/container": "2.0.x-dev",
+                "symfony/dotenv": "7.1.x-dev",
+                "twig/twig": "^v3.8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "11.1.x-dev",
+                "symfony/var-dumper": "^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Bolero\\": "src/"
+                }
+            },
+            "license": [
+                "GPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "David Blanchard",
+                    "email": "dpjb@hotmail.fr",
+                    "role": "Creator"
+                }
+            ],
+            "description": "Professional PHP experiments",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
             "name": "larelev/bolero-framework",
             "version": "0.1.0",
             "dist": {
                 "type": "path",
                 "url": "../framework",
-                "reference": "8129c50a430b1e2883a52ac484ef47ac8e6843d7"
+                "reference": "d5adbb48595c47fbed954ad4049e3e46fd77155c"
             },
             "require": {
                 "doctrine/dbal": "^4.1.x-dev",
@@ -835,12 +915,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "e5e7ddb00b859dbdf5ad8f3bbe4cd29a3a37aa34"
+                "reference": "3cf95983a25d6439cac5f5164f0bfeeb1eb5d264"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/e5e7ddb00b859dbdf5ad8f3bbe4cd29a3a37aa34",
-                "reference": "e5e7ddb00b859dbdf5ad8f3bbe4cd29a3a37aa34",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/3cf95983a25d6439cac5f5164f0bfeeb1eb5d264",
+                "reference": "3cf95983a25d6439cac5f5164f0bfeeb1eb5d264",
                 "shasum": ""
             },
             "require": {
@@ -908,7 +988,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-03-14T13:49:05+00:00"
+            "time": "2024-04-12T09:26:28+00:00"
         },
         {
             "name": "symfony/polyfill-php80",
@@ -997,12 +1077,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "64ee590d469227705cb4bad179cbda90241511ac"
+                "reference": "5191fbc1a3ff09c71d9d29bd72ddfb9ed47b1efb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/64ee590d469227705cb4bad179cbda90241511ac",
-                "reference": "64ee590d469227705cb4bad179cbda90241511ac",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/5191fbc1a3ff09c71d9d29bd72ddfb9ed47b1efb",
+                "reference": "5191fbc1a3ff09c71d9d29bd72ddfb9ed47b1efb",
                 "shasum": ""
             },
             "require": {
@@ -1069,7 +1149,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-04-03T15:08:28+00:00"
+            "time": "2024-04-13T07:39:01+00:00"
         }
     ],
     "packages-dev": [
@@ -1162,7 +1242,9 @@
     "stability-flags": {
         "larelev/bolero-authentication": 20,
         "larelev/bolero-framework": 20,
-        "larelev/bolero-flashmessage": 20
+        "larelev/bolero-flashmessage": 20,
+        "larelev/bolero-forms": 20,
+        "ephect-io/javascripts": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

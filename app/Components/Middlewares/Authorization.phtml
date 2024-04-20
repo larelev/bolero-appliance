@@ -7,6 +7,7 @@ function Authorization()
     $authorization = true;
 
     return (<<< HTML
-
+    @op header("location: /landing")
+    @op exit
     HTML);
 }

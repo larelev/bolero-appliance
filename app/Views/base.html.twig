@@ -86,24 +86,7 @@
 </nav>
 
 <main class="container">
-    {% if flashMessage().hasSuccess %}
-        <div class="alert alert-success" role="alert">
-            <ul style="list-style: none">
-                {% for message in flashMessage().getSuccess %}
-                    <li>{{ message }}</li>
-                {% endfor %}
-            </ul>
-        </div>
-    {% endif %}
-    {% if flashMessage().hasError %}
-        <div class="alert alert-warning" role="alert">
-            <ul style="list-style: none">
-                {% for message in flashMessage().getError %}
-                    <li>{{ message }}</li>
-                {% endfor %}
-            </ul>
-        </div>
-    {% endif %}
+    {% include "flashmessage.html.twig" %}
     <div class="bg-light p-5 rounded">
         {% block main %} {% endblock %}
     </div>

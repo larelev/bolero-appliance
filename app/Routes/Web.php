@@ -1,10 +1,11 @@
 <?php
 
 use Bolero\Framework\Routing\Route;
-use Bolero\Plugins\Authentication\Authentication;
-use Bolero\Plugins\Dashboard\Dashboard;
+use Bolero\Plugins\Authentication\Configuration as Authentication;
+use Bolero\Plugins\Dashboard\Configuration as Dashboard;
 
 Route::get('/', [\App\Controllers\HomeController::class, 'index']);
+Route::get('/landing', [\App\Controllers\LandingController::class, 'index']);
 Route::get('/posts/{id:\d+}', [\App\Controllers\PostController::class, 'show',
     [
         \Bolero\Plugins\Authentication\Middlewares\Authentication::class,

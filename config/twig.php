@@ -1,7 +1,7 @@
 <?php
 
 return [
-    APP_VIEWS_PATH,
-    ...\Bolero\Plugins\Authentication\Authentication::viewsPaths(),
-    ...\Bolero\Plugins\Dashboard\Dashboard::viewsPaths(),
+    \Bolero\Plugins\Authentication\Configuration::viewsPath(),
+    \Bolero\Plugins\Dashboard\Configuration::viewsPath(),
+    \Bolero\Plugins\FlashMessage\Configuration::viewsPath(),
 ];

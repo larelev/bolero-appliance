@@ -6,7 +6,7 @@ use App\Widgets\Dummy;
 use Bolero\Framework\Http\Response;
 use Bolero\Framework\MVC\AbstractController;
 
-class HomeController extends AbstractController
+class LandingController extends AbstractController
 {
     public function __construct(private Dummy $widget)
     {
@@ -14,6 +14,6 @@ class HomeController extends AbstractController
 
     public function index(): Response
     {
-        return $this->render('Home', ['name' => $this->widget->name]);
+        return $this->render('Landing', ['name' => $this->widget->name]);
     }
 }

@@ -1,4 +1,10 @@
+/.idea/
+/.vscode/
 /vendor/
 /var/*
-.idea
+/cache/*
+/logs/*
+/oublic/*
+/runtime/*
 php_errors.log
+ajil.js

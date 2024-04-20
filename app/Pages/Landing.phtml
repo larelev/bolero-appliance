@@ -1,0 +1,17 @@
+<?php
+
+namespace Appliance;
+
+use App\Widgets\Dummy;
+
+function Landing()
+{
+
+    $pageType = 'landing';
+
+    return (<<< HTML
+    <Base>
+    <h1>This is a {{ pageType }} page.</h1>
+    </Base>
+    HTML);
+}

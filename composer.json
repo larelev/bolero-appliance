@@ -44,13 +44,23 @@
       "options": {
         "symlink": true
       }
+    },
+    {
+      "type": "path",
+      "url": "../forms",
+      "options": {
+        "symlink": true
+      }
     }
   ],
   "require": {
     "php": "^8.2",
     "larelev/bolero-authentication": "@dev",
     "larelev/bolero-framework": "@dev",
-    "larelev/bolero-flashmessage": "@dev"
+    "larelev/bolero-flashmessage": "@dev",
+    "larelev/bolero-forms": "@dev",
+    "ephect-io/javascripts": "dev-main",
+    "ext-readline": "*"
   },
   "require-dev": {
     "symfony/var-dumper": "^7.0"

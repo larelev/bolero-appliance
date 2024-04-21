@@ -8,9 +8,9 @@ use DateTimeImmutable;
 class Post extends Entity
 {
     public function __construct(
-        private ?int                       $id,
-        public readonly string             $title,
-        public readonly string             $body,
+        private ?int                      $id,
+        public readonly string            $title,
+        public readonly string            $body,
         public readonly DateTimeImmutable $createdAt,
     )
     {

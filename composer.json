@@ -17,13 +17,14 @@
     }
   ],
   "minimum-stability": "dev",
-  "repositories": [{
-    "type": "path",
-    "url": "../authentication",
-    "options": {
-      "symlink": true
-    }
-  },
+  "repositories": [
+    {
+      "type": "path",
+      "url": "../authentication",
+      "options": {
+        "symlink": true
+      }
+    },
     {
       "type": "path",
       "url": "../dashboard",

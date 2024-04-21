@@ -36,4 +36,5 @@ class Migration_20240316123841736623
 
         echo __METHOD__ . " executed!" . PHP_EOL;
     }
-};
+}
+

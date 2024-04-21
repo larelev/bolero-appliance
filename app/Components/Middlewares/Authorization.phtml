@@ -4,10 +4,8 @@ namespace Appliance;
 
 function Authorization()
 {
-    $authorization = true;
-
     return (<<< HTML
-    @op header("location: /landing")
+    <ResponseHeader directive[]="location: /landing" />
     @op exit
     HTML);
 }

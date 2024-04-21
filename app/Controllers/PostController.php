@@ -6,20 +6,28 @@ use App\Entities\Post;
 use App\Repositories\Exceptions\PostNotFoundException;
 use App\Repositories\PostMapper;
 use App\Repositories\PostRepository;
-use Doctrine\DBAL\Exception;
 use Bolero\Framework\Http\RedirectResponse;
 use Bolero\Framework\Http\Response;
 use Bolero\Framework\MVC\AbstractController;
+use Doctrine\DBAL\Exception;
+use Psr\Container\ContainerExceptionInterface;
+use Psr\Container\NotFoundExceptionInterface;
 
 class PostController extends AbstractController
 {
 
     public function __construct(
-        private readonly PostMapper $postMapper,
+        private readonly PostMapper     $postMapper,
         private readonly PostRepository $postRepository,
-    ) {
+    )
+    {
     }
 
+    /**
+     * @throws NotFoundExceptionInterface
+     * @throws ContainerExceptionInterface
+     * @throws Exception
+     */
     public function show(int $id): Response
     {
         try {
@@ -35,13 +43,7 @@ class PostController extends AbstractController
         ]);
     }
 
-    public function create(): Response
-    {
-        return $this->render('create.post.html.twig');
-    }
-
     /**
-     * @throws Exception
      */
     public function store(): Response
     {
@@ -57,5 +59,14 @@ class PostController extends AbstractController
         );
 
         return new RedirectResponse('/posts');
+    }
+
+    /**
+     * @throws ContainerExceptionInterface
+     * @throws NotFoundExceptionInterface
+     */
+    public function create(): Response
+    {
+        return $this->render('create.post.html.twig');
     }
 }

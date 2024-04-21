@@ -5,11 +5,15 @@ namespace App\Repositories;
 use App\Entities\Post;
 use Bolero\Framework\Dbal\DataMapper;
 use Bolero\Framework\Dbal\Entity;
+use Doctrine\DBAL\Exception;
 
 class PostMapper extends DataMapper
 {
 
-    public function insert(Post | Entity &$entity): void
+    /**
+     * @throws Exception
+     */
+    public function insert(Post|Entity &$entity): void
     {
         $stmt = $this->connection->prepare("
         INSERT INTO posts (title, body, created_at)

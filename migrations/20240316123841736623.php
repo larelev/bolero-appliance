@@ -1,8 +1,8 @@
 <?php
 
 use Doctrine\DBAL\Schema\AbstractSchemaManager;
-use Doctrine\DBAL\Types\Types;
 use Doctrine\DBAL\Schema\Table;
+use Doctrine\DBAL\Types\Types;
 
 class Migration_20240316123841736623
 {

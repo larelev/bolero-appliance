@@ -1,10 +1,17 @@
 <?php
 
+use Bolero\Framework\Middleware\ExtractRouteInfo;
+use Bolero\Framework\Middleware\History;
+use Bolero\Framework\Middleware\RouterDispatcher;
+use Bolero\Framework\Middleware\SessionManager;
+use Bolero\Plugins\Authentication\Middlewares\VerifyCsrfToken;
+use Bolero\Plugins\FlashMessage\Middlewares\FlashMessenger;
+
 return [
-    \Bolero\Framework\Middleware\ExtractRouteInfo::class,
-    \Bolero\Framework\Middleware\SessionManager::class,
-    \Bolero\Plugins\FlashMessage\Middlewares\FlashMessenger::class,
-    \Bolero\Plugins\Authentication\Middlewares\VerifyCsrfToken::class,
-    \Bolero\Framework\Middleware\RouterDispatcher::class,
-    \Bolero\Framework\Middleware\History::class,
+    ExtractRouteInfo::class,
+    SessionManager::class,
+    FlashMessenger::class,
+    VerifyCsrfToken::class,
+    RouterDispatcher::class,
+    History::class,
 ];

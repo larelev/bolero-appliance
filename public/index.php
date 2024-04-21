@@ -1,5 +1,7 @@
 <?php
 
+use Bolero\Framework\Web\WebApplication;
+
 include '..' . DIRECTORY_SEPARATOR . 'bootstrap.php';
 
-\Bolero\Framework\Web\WebApplication::create();
+WebApplication::create();

@@ -4,14 +4,30 @@ namespace App\Repositories;
 
 use App\Entities\Post;
 use App\Repositories\Exceptions\PostNotFoundException;
+use DateTimeImmutable;
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Exception;
 
 class PostRepository
 {
 
-    public function __construct(private Connection $connection)
+    public function __construct(private readonly Connection $connection)
     {
+    }
+
+    /**
+     * @throws PostNotFoundException
+     * @throws Exception
+     */
+    public function findOrFail(int $id): Post
+    {
+        $post = $this->findById($id);
+
+        if (!$post) {
+            throw new PostNotFoundException($id);
+        }
+
+        return $post;
     }
 
     /**
@@ -35,25 +51,14 @@ class PostRepository
             return null;
         }
 
-        $obj = (object) $row[0];
+        $obj = (object)$row[0];
 
         return new Post(
             id: $obj->id,
             title: $obj->title,
             body: $obj->body,
-            createdAt: new \DateTimeImmutable($obj->createdAt)
+            createdAt: new DateTimeImmutable($obj->createdAt)
         );
 
-    }
-
-    public function findOrFail(int $id): Post
-    {
-        $post = $this->findById($id);
-
-        if (!$post) {
-            throw new PostNotFoundException($id);
-        }
-
-        return $post;
     }
 }

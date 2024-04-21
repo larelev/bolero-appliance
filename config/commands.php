@@ -1,4 +1,7 @@
 <?php
+
+use Bolero\Plugins\Authentication\Configuration;
+
 return [
-    \Bolero\Plugins\Authentication\Configuration::commandsLocation(),
+    Configuration::commandsLocation(),
 ];

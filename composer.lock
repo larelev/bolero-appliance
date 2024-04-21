@@ -207,6 +207,13 @@
                 "reference": "4fc69b4fd98b2fc5f22b454c5c9b010241ade758"
             },
             "require": {
+                "ext-curl": "*",
+                "ext-iconv": "*",
+                "ext-mbstring": "*",
+                "ext-pcntl": "*",
+                "ext-readline": "*",
+                "ext-tidy": "*",
+                "ext-zip": "*",
                 "larelev/bolero-dashboard": "@dev",
                 "larelev/bolero-flashmessage": "@dev",
                 "larelev/bolero-framework": "@dev",
@@ -309,7 +316,7 @@
             "dist": {
                 "type": "path",
                 "url": "../forms",
-                "reference": "cc4e3ec2c4300472383b809efd824992aeda76f9"
+                "reference": "972aec081d17958fca0cbc741b3efeb8a6b404fb"
             },
             "require": {
                 "doctrine/dbal": "^4.1.x-dev",
@@ -348,10 +355,11 @@
             "dist": {
                 "type": "path",
                 "url": "../framework",
-                "reference": "ead50b75d1cb4d69e6eeac35a28bde40de274661"
+                "reference": "193fd58bc1df9f9368382f5b602aa98bb151e026"
             },
             "require": {
                 "doctrine/dbal": "^4.1.x-dev",
+                "ext-iconv": "*",
                 "ext-mbstring": "*",
                 "ext-pdo": "*",
                 "league/container": "^4.0.0",

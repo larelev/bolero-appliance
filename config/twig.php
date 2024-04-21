@@ -1,7 +1,9 @@
 <?php
 
+use Bolero\Plugins\FlashMessage\Configuration;
+
 return [
     \Bolero\Plugins\Authentication\Configuration::viewsPath(),
     \Bolero\Plugins\Dashboard\Configuration::viewsPath(),
-    \Bolero\Plugins\FlashMessage\Configuration::viewsPath(),
+    Configuration::viewsPath(),
 ];

@@ -3,11 +3,12 @@
 namespace App\Repositories\Exceptions;
 
 use Bolero\Framework\Dbal\Exceptions\DataNotFoundException;
+use Throwable;
 
 class PostNotFoundException extends DataNotFoundException
 {
 
-    public function __construct(int $postId, ?\Throwable $previous = null)
+    public function __construct(int $postId, ?Throwable $previous = null)
     {
         parent::__construct(sprintf('Post %d', $postId), $previous);
     }

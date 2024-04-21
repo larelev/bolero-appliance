@@ -80,7 +80,7 @@ class Dump implements CommandInterface
                     $start = $posToken + $lenToken + 2;
 
                     $value = substr($entries, $offset + $start, $len);
-                    $quote = substr($value, 0, 8) == 'function' ? '' : "'";
+                    $quote = str_starts_with($value, 'function') ? '' : "'";
                     $value = $quote == '' ? $value : str_replace("\\", "\\\\", $value);
 
                     if ($j = substr_count($value, PHP_EOL)) {
@@ -122,7 +122,7 @@ class Dump implements CommandInterface
         return $convert;
     }
 
-    private function var_dump_r(mixed $value)
+    private function var_dump_r(mixed $value): false|string
     {
         ob_start();
         var_dump($value);

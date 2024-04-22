@@ -60,8 +60,7 @@
     "larelev/bolero-framework": "@dev",
     "larelev/bolero-flashmessage": "@dev",
     "larelev/bolero-forms": "@dev",
-    "ephect-io/javascripts": "dev-main",
-    "ext-readline": "*"
+    "ephect-io/javascripts": "dev-main"
   },
   "require-dev": {
     "symfony/var-dumper": "^7.0"

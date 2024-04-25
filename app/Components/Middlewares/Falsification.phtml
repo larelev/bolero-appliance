@@ -2,13 +2,14 @@
 
 namespace Appliance;
 
+use Bolero\Forms\Logger\Logger;
 use Bolero\Forms\Plugins\Route\Attributes\RouteMiddleware;
 
 #[RouteMiddleware]
-function Authorization(): string
+function Falsification(): string
 {
+    (Logger::create())->info('Falsification middleware');
     return (<<< HTML
-    <ResponseHeader directive[]="location: /landing" />
-    @op exit
+
     HTML);
 }
